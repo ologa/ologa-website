@@ -1,2 +1,2 @@
 # ologa-website
-Ologa's Website Repo
+Ologa's Website Repository
