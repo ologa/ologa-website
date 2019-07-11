@@ -628,6 +628,136 @@
 
 	});
 
+var Carousel = new
+function() {
+
+    var wrapper = document.getElementById('carousel-container'),
+        timer = null;
+
+    var start = function() {
+
+        doCarousel();
+    };
+
+
+
+    var sliding = function() {
+
+
+       
+        var item_width = $('#carousel-ul li').outerWidth() + 10;
+
+        
+        var left_indent = parseInt($('#carousel-ul').css('left')) - item_width;
+
+        
+        $('#carousel-ul:not(:animated)').animate({
+            'left': left_indent
+        }, 2000, 'linear', function() {
+
+            
+            $('#carousel-ul li:last').after($('#carousel-ul li:first'));
+
+            
+            $('#carousel-ul').css({
+                'left': '-160px'
+            });
+        });
+
+
+
+
+    };
+
+    var doCarousel = function() {
+
+        timer = setInterval(sliding, 2000);
+
+
+    };
+
+    var pause = function() {
+
+        clearInterval(timer);
+        timer = null;
+
+
+    };
+
+    var resume = function() {
+
+        doCarousel();
+
+
+    };
+
+    this.init = function() {
+
+        start();
+
+
+    };
+
+
+
+
+
+
+}();
+
+$(function() {
+
+    Carousel.init();
+
+});
+
+$('#carousel-ul li').mouseover(function(){ 
+		//alert("hey");
+    //clearInterval(timer);
+    //timer = null;
+    //pause();
+    Carousel.pause();
+});
+
+
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+
+$(function() {
+   $('.carousel').carousel();
+})();
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 	
