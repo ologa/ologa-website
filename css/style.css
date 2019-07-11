@@ -365,6 +365,11 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-services, #fh5co-testimony, #fh5co-explore, #fh5co-faq, #fh5co-team, #fh5co-trusted, #fh5co-footer {
   padding: 5em 0;
 }
+
+#HCMsoftware{
+  padding: 1px  ;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-services, #fh5co-testimony, #fh5co-explore, #fh5co-faq, #fh5co-team, #fh5co-trusted, #fh5co-footer {
     padding: 2em 0;
@@ -391,9 +396,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.mt {
-  margin-top: 80px;
-  margin-bottom: 80px;
+#mt {
+ 
+  text-align: justify;
+}
+
+#listOne{
+  font-size: 12pt;
+  text-align: left;
+
 }
 .mt h4 {
   position: relative;
@@ -561,6 +572,7 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-pricing {
   padding: 4em 0 6em 0;
   background: #f1faff;
+
 }
 .fh5co-pricing .pricing {
   display: block;
@@ -658,6 +670,11 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-team {
   background: #f1faff;
 }
+
+#fh5co-services{
+    background: #f1faff;
+}
+
 #fh5co-team .team-box {
   position: relative;
   padding: 30px;
@@ -1271,20 +1288,21 @@ width: 47.5%;
 #font1{
   color: red;
 }
- .slideshow {  
-       width: 650px;  
-       height: 400px;  
+.slideshow {  
+       width: 640px;  
+       height: 480px;  
        margin:  auto;
        overflow: hidden;
        border: 3px solid #f2f2f2;
-    }  
-    .slideshow ul {  
-       width: 600%;  
-       height: 400px;
+}  
+.slideshow ul {  
+       width: 640%;  
+       height: 480px;
        padding:0; margin:0;
        list-style:none;
-    }  
-    .slideshow li { float: left; }
+}  
+
+.slideshow li { float: left; }
 
 
 
@@ -1295,35 +1313,38 @@ width: 47.5%;
 
 
 .plan {
+
   float: left;
   width: 130px;
-  margin: 20px 5px;
+   
+  margin:   5px;
   padding: 5px 20px;
   text-align: center;
   background: white;
   background-clip: padding-box;
   border: 2px solid #e5ded6;
   border-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .plan-title {
   margin-bottom: 5px ;
-  font-size: 20px;
+  font-size: 15px;
   color: #36bce6;
+
 }
 
 .plan-price {
   margin-bottom: 10px;
   line-height: 1;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   color: #e4362d;
 }
 
 .plan-unit {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 13px;
   font-weight: normal;
   color: #aaa;
@@ -1331,21 +1352,20 @@ width: 47.5%;
 
 .plan-features {
   width: 100px;
-  margin: 10px auto 10px;
-  padding: 10px 0 0 10px;
+   padding: 5px;
   border-top: 1px solid #e4362d;
-  text-align: left;
+  text-align: left ;
 }
 
 .plan-feature {
-  line-height: 20px;
-  font-size: 24px;
-  font-weight: 500;
+  line-height: 18px;
+  font-size: 16px;
+ 
   color: #333;
 }
 
 .plan-feature + .plan-feature {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .plan-feature-unit {
@@ -1406,10 +1426,224 @@ width: 47.5%;
   border: 4px solid #37bbe6;
 }
 
-#rgb{
-    background-image: linear-gradient(to  right, red, blue);
+#rgbNone{
+    background-image: linear-gradient(to  right, red, #3EB0F7);
+      border-collapse: collapse;
+  border-radius: 0.5em;
+  overflow: hidden;
+
+border-color: white  ; 
+ 
     }
 
 
+ 
 
+
+#titlebar{
+
+color: black;
+font-size:14pt;
+font-weight: bold;
+
+}
+
+#fonttable1{
+
+color: black;
+font-size:12pt;
+font-weight: bold;
+  }
+
+#fonttable{
+
+color: black;
+font-size:12pt;
+  }
+
+#myli{
+  list-style-type: none;
+}
+
+#BusinessPlus{
+  font-size: 11px;
+  width: 100%
+}
+
+
+
+
+#divhmcimg{
+ 
+  width: 60%;
+ float: left;
+}
+#centerdiv{
+    width: 3%;
+     float: left;
+}
+#divhmctxt{
+ 
+  width: 37%;
+ float: left;
+}
+
+#Pjustify{
+  text-align: justify;
+}
+
+
+
+#txtleft{
+  text-align: left;
+  font-size: 12pt;
+}
+
+ 
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+ .center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13%;
+}
+
+ 
+
+  
+.red {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+ 
+  height:400px;
+
+  opacity: 0.9;
+}
+
+.blue {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+ 
+  height:400px;
+}
+
+
+
+.servicesDiv{
+  width: 30%;
+  float: left;
+
+  
+}
+
+.servicesdividir{
+   background: #f1faff;
+  width: 3%; 
+  float: left;
+}
+
+.size{
+
+  font-size: 15px
+}
+
+#white{
+  color: white;
+}
+
+ 
+
+
+#carousel-container {
+    width: 94%;
+  
+    position: relative;
+    
+    overflow: hidden;
+    height: 250px;
+}
+
+#carousel-inner {
+    width:100%;
+    float: left;
+  
+ 
+}
+
+#carousel-ul {
+    position:relative;
+    left: -160px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width:9999px;
+   
+}
+
+#carousel-ul li{
+    float:  left;                                    
+    width: 150px;  
+    padding:0px;
+    height:100px;
+    margin: 50px 15px 0 15px;
+    position: relative;
+    
+    line-height: 100px;
+    font-size: 2em;
+    text-align: left;
+}
+
+
+ 
+
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#font{
+ 
+ text-align: justify; 
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+}
  /*# sourceMappingURL=style.css.map */
+}

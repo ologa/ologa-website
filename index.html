@@ -58,6 +58,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 
+ 
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -67,7 +69,7 @@
 
 	</head>
 	<body>
-	<header role="banner" id="fh5co-header">
+	<header role="banner" id="fh5co-header" class=" to-animate">
 		<div class="fluid-container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
@@ -76,13 +78,14 @@
 					<a class="navbar-brand" href="index.html"><span>OLOGA</span></a> <br>
 					<!-- <img class="img-responsive" src="images/logo.jpg" alt="work"> -->
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse collapse ">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#" data-nav-section="home"><span>Início</span></a></li>
 						<li><a href="#" data-nav-section="explore"><span>Sistemas e WebSites</span></a></li>
 						<li><a href="#" data-nav-section="pricing"><span>Internet Via Satélite</span></a></li>
-						<li><a href="#" data-nav-section="faq"><span>Suporte Técnico</span></a></li>
-						<li><a href="#" data-nav-section="services"><span>Serviços</span></a></li>
+							<li><a href="#" data-nav-section="services"><span>Serviços</span></a></li>
+					    <li><a href="#" data-nav-section="testimony"><span>Portfólio</span></a></li>
+					
 						<li><a href="#" data-nav-section="team"><span>A Equipa</span></a></li> 
 						<li class="call-to-action"><a href="#" data-nav-section="footer"><span>Contactos</span></a></li>
 					</ul>
@@ -97,10 +100,11 @@
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-8 col-md-offset-2 to-animate">
 							<img class="img-responsive" src="images/logo.png" align="center" alt="work" style="display: inline; padding-bottom: 50px;" >
-							<h1 class="to-animate">Bem vindo ao Website da Ologa Sistemas Informáticos Lda</h1>
-							<h2 class="to-animate">A <b> Ologa Sistemas Informáticos Lda </b>, é uma empresa que actua no ramo das Tecnologias de Informação e Comunicação, com foco em soluções tecnológicas para desenvolvimento social e económico de Moçambique. A palavra Ologa é derivada do termo “falar” em Chuabo, língua falada no Centro de Moçambique. O nome surgiu através da ideia de estabelecer um elo entre o termo “comunicação” e um dialecto nacional. </h2>
+							<p class="to-animate">Bem vindo ao Website da </p>
+							<h1 class="to-animate">Ologa Sistemas Informáticos Lda</h1>
+							<h2 class="to-animate">A <b> Ologa Sistemas Informáticos Lda </b>, é uma empresa que actua no ramo das Tecnologias de Informação e Comunicação, com foco em soluções tecnológicas para desenvolvimento social e económico em Moçambique e no exterior. A palavra Ologa é derivada do termo “falar” em Chuabo, língua falada no Centro de Moçambique. O nome surgiu através da ideia de estabelecer um elo entre o termo “comunicação” e um dialecto nacional. </h2>
 							<div class="call-to-action">
 								<!--
 								<a href="#" class="demo to-animate">Demo</a>
@@ -131,56 +135,63 @@
 		<div class="fh5co-explore" >
 			<div class="container" >
 				<div class="row">
-					<div class="col-md-8 col-md-push-5 to-animate-2">
+					<div class="col-sm-8 col-md-push-5 to-animate-2">
 						<img class="img-responsive" src="images/work_1.png" alt="work">  
-					 
-					 <div class="mt">
-			 			<ul class="list-nav"> <p><b>Módulos Principais:</b></p>
-									<li><i class="icon-check2"></i>Informação sobre o Activista ou trabalhador de campo</li>
-									<li><i class="icon-check2"></i>Informação do agregado familiar</li>
-									<li><i class="icon-check2"></i>Informações do beneficiário (criança ou adulto)</li>
-									<li><i class="icon-check2"></i>Índice de status filho</li>
-									<li><i class="icon-check2"></i>Plano de Atendimento Individual</li>
-									<li><i class="icon-check2"></i>Visitas de acompanhamento</li>
-									<li><i class="icon-check2"></i>Referidos (referidos e completados)</li>
-						</ul>
 					</div>
-
-			</div>
 					<div class="col-md-4 col-md-pull-8 to-animate-2">
 						<div class="mt">
 							<h3>SURETRACK / eMAC</h3>
-							<p> É um software concebito para auxiliar projectos sociais ou de saúde que prestam serviços ao nível do agregado familiar. O Sistema permite que ONGs ou governos que useam a metodologia do CSI nos seus programas Crianças Órfâs e Vulneráveis (COV) melhorem a Monitoria, Avaliação e Gestão dos programas, aos seguintes níveis: </p> <br><br><br>
-							<ul class="list-nav">
-								<li><i class="icon-check2"></i>Progresso do beneficiário (criança ou adulto)</li>
-								<li><i class="icon-check2"></i>Progresso do agregado familiar</li>
-								<li><i class="icon-check2"></i>Organizações Baseadas na Comunidade</li>
-								<li><i class="icon-check2"></i>Prestadores de serviços comunitários ou prestador de serviços sociais relevantes</li>
-								<li><i class="icon-check2"></i>Parceiro de Implementação</li>
-								<li><i class="icon-check2"></i>Localização geográfica (distrito, província, nacional)</li>
-							</ul>
+							<p id="mt" > É um software concebito para auxiliar projectos sociais ou de saúde que prestam serviços ao nível do agregado familiar. O Sistema permite que ONGs ou governos que useam a metodologia do  Child Status Index (CSI)  nos seus programas Crianças Órfâs e Vulneráveis (COV) melhorem a Monitoria, Avaliação e Gestão dos programas, aos seguintes níveis:</p>  
+								<ul class="list-nav"> <p><b>Módulos Principais:</b> 
+									<li><i class="icon-check2"></i>Informação sobre o Activista ou trabalhador de campo</li>
+									<li><i class="icon-check2"></i>Informação do agregado familiar</li>
+									<li><i class="icon-check2"></i>Informações do beneficiário (criança ou adulto)</li> 
+									<li><i class="icon-check2"></i>Plano de Atendimento Individual</li>
+									<li><i class="icon-check2"></i>Visitas de acompanhamento</li>
+									<li><i class="icon-check2"></i>Referências (feitas e completas)</li>
+								</ul>
 						</div>  
-					</div>
-					
-					
-				</div>
+ 					</div>
+
+				 </div>
+				   <br>  <br> 
+ 				 
+					 <h3 align="center " class=" to-animate">Sistema de Registo Médico Eletrónico e Registo de Doentes do Hospital Central de Maputo</h3>
+ 				  	<div class="container  to-animate" >
+ 				  		<div id="divhmcimg"  ><img class="img-responsive" src="images/work_3.jpg" alt="work" id="hcmwork">  </div>
+ 				  		
 
 
-			</div>
+ 				  		<div id="centerdiv"  > &emsp;</div>
+ 				  		<div id="divhmctxt" ><p id="Pjustify">Este sistema, usa soluções de código aberto em todas as camadas, o banco de dados é PostgreSQL, e o backend foi feito usando o framework de aplicações web mais avançado do Python chamado Django. O frontend é baseado no React, que é uma nova linguagem frontend baseada em bibliotecas JavaScript, permitindo a melhor experiência de desempenho, minimizando requisições para o backend através do uso dessas bibliotecas JavaScript para a maioria dos recursos frontend diretamente no navegador.</p> </div>
+ 				  	</div>
+
+
+
+
+
+
+
+
+
+            </div>
 		</div>
 
+
+ 
+----
 		<div class="fh5co-explore fh5co-explore-bg-color">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-pull-1 to-animate-3">
+					<div class="col-md-8 col-md-pull-1 to-animate-3"  >
 						<img class="img-responsive" src="images/work_2.png" alt="work">
 					</div>
 					<div class="col-md-4 to-animate-3">
 						<div class="mt">
-							<div>
-								<h4><i class="icon-laptop"></i>Websites com Layout Modernos e responsivos</h4>
-								<p>Websites corporativo para grandes empresa de renome como a <a href="http://www.epsilon.co.mz/" target="_blank">Epsilon Investimentos</a> uma empresa que atua na área de contrução civil. </p>
-								<p>Websites para As Instituições do Estado como <a href="http://www.hcm.gov.mz" target="_blank">Hospital Central de Maputo</a> e manutenção dos mesmos.</p>
+							<div> <br> <br>
+								<h4><i class="icon-screen-desktop"></i>Websites com Layout Modernos e responsivos</h4>
+								<p id="Pjustify">Websites corporativo para grandes Instituições de renome como a <a href="http://www.gapi.co.mz" target="_blank">GAPI</a> uma Instituição Financeira de Desenvolvimento (IFD), registada no Banco de Moçambique na categoria de Sociedade de Investimentos (SI). </p>
+								<p id="Pjustify">Websites para As Instituições do Estado como <a href="http://www.hcm.gov.mz" target="_blank">Hospital Central de Maputo</a> e manutenção dos mesmos.</p>
 							</div>
 
 						</div>
@@ -197,272 +208,161 @@
 					<div class="col-md-12 section-heading text-center">
 						<h2 class="to-animate">Internet Via Satélite</h2>
 						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Soluções de Internet via Satélite para Residências e PMEs
-														| Soluções Corporativas de Internet via Satélite
-														| Instalação, Reparação e Manutenção de VSats
-														| Cobertura em todo país 
-														<br>
-								</h3>
-							</div>
 
-							<div class="col-md-13" >
-			 						    	    <div id="tudo1">
-										<p>
+							<div class="col-md-13"  >
+			 					 <div id="tudo1" class=" to-animate-2" >
+										<p id="Pjustify">
 											<span>A Ologa disp&otilde;es de Servi&ccedil;o de Acesso a Internet de baixo custo usando tecnologias de comunica&ccedil;&atilde;o via Sat&eacute;lite, com uma variedade de pacotes concebidos para indiv&iacute;duos, PMEs e empresas em regi&otilde;es remotas, onde as alternativas terrestres s&atilde;o inexistentes ou inst&aacute;veis. Veja abaixo os nosssos pacotes concebidos para uso privado ou PMEs. 
 											</span>
 										</p>
-										<p>
-											<span>
+
+																					<ul  id="txtleft">
+									                     <li>Soluções de Internet via Satélite para Residências e PMEs</li> 
+														 <li>Soluções Corporativas de Internet via Satélite</li> 
+														 <li>Instalação, Reparação e Manutenção de VSats</li> 
+													     <li>Cobertura em todo país</li>  
+											 </ul>
+
+											 <p id="txtleft" >
 												<strong>Para solu&ccedil;&otilde;es corporativas contacte-nos.</strong>
-											</span>
-										</p>
+											</p>
+										 
 									</div>
 									<div id="SpaceBetwentudo1Andtudo3"></div>
-									<div id="tudo2">
-										<p>
-											<em>
-											<span>Ologa provides affordable Internet Access via Satellite, with a variety of packages designed for Individuals, SMEs, Businesses and Corporate, in remote or peri urban areas where the terrestrial solutions are not reliable. Browse below Packages conceived for Home and SMEs. </span>
-											</em>
-										</p>
-										<p>
-											<em>
-												<span>
-													<strong>For corporate solutions please contact us directly.</strong>
-											</span>
-										</em>
-									</p>
+									<div id="tudo2" class=" to-animate-2">
+										 
+											  <img src="images/vsat.png">
+
+											 
+								
+										 
 								</div> 
-							</div> 
+							</div>  
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-                   	<h4 class="page-title" style="text-align: center;"><b>Preçário de Internet Via Satélite / Satelite Internet Pricing</b></h4>
+                   <p><p><p>	<h4 class="page-title to-animate-2" style="text-align: center;"><b>Preçário de Internet Via Satélite / Satelite Internet Pricing</b></h4>
                  
     <div class="container">
-		<table    align="center">
+		<table    align="center"  >
 			<tr>
 				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
+  								  <h3 class="plan-title">Basic</h3>
+  									  <p class="plan-price">$88 <span class="plan-unit">per month</span></p>
    											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
+   												   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   												   <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 1 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 250</span></li> 
+    								 
    											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
+  														  
   							</div>
   				</td>
 
-  				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title">Bronze</h3>
+  									  <p class="plan-price">$175 <span class="plan-unit">per month</span></p>
    											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
+   							   					<li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   												    <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 2 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 500</span></li> 
    											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
-  							</div>
-  				</td>
-				<td>  							<div class="plan to-animate-2 popular">
-  								  <h3 class="plan-title">Started</h3>
-  									  <p class="plan-price">$19 <span class="plan-unit">per month</span></p>
-   											 <ul class="plan-features">
-   												   <li class="plan-feature"> &infin; <span class="plan-feature-name">websites</span></li>
-    											   <li class="plan-feature">5<span class="plan-feature-unit">GB</span> <span class="plan-feature-name">storage</span></li>
-    											   <li class="plan-feature">3 <span class="plan-feature-name">users</span></li>
-   											  </ul>
-  														  <a href="#" class="plan-button">Choose Plan</a>
+  														 
   							</div>
   				</td>
 
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title">Silver</h3>
+  									  <p class="plan-price">$227 <span class="plan-unit">per month</span></p>
+   											 <ul class="plan-features">
+   												   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+                                                    <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 3 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 750</span></li> 
+   											  </ul>
+  														  
+  							</div>
+  				</td>
 
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title">Gold</h3>
+  									  <p class="plan-price">$426 <span class="plan-unit">per month</span></p>
+   											 <ul class="plan-features">
+   												   	   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   												   	  <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 6 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 1 200</span></li> 
+   											  </ul>
+  														   
+  							</div>
+  				</td>
 
-			</tr> 
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title">Business</h3>
+  									  <p class="plan-price">$588 <span class="plan-unit">per month</span></p>
+   											 <ul class="plan-features">
+   												   	   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   												    <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 8 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 1 750</span></li> 
+   											  </ul>
+  														  
+  							</div>
+  				</td>
 
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title" >Platinum</h3>
+  									  <p class="plan-price">$758 <span class="plan-unit">per month</span></p>
+   											 <ul class="plan-features">
+   												   	   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   												  		   <li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 10 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 2 500</span></li>
+   											  </ul>
+  														 
+  							</div>
+  				</td>
 
+  								<td>  							<div class="plan to-animate-2 popular">
+  								  <h3 class="plan-title" id="BusinessPlus">Platinum + (dual)</h3>
+  									  <p class="plan-price">$951 <span class="plan-unit">per month</span></p>
+   											 <ul class="plan-features">
+   												   <li class="plan-feature"><span class="plan-feature-name">Uncapped</span></li>
+   													<li class="plan-feature">&#8595;<span class="plan-feature-name"> (kbps) 15 000</span></li> 
+   												    <li class="plan-feature">&#8593;<span class="plan-feature-name"> (kbps) 3 000</span></li>
+   											  </ul>
+  														  
+  							</div>
+  				</td>
 
- </table>
+  								<td>  							
+  								 <div class="plan plan-highlight to-animate-2">
+     					<p class="plan-recommended">Equipmanet Cost</p>
+    								<h3 class="plan-title">MDM 2210 Modem</h3>
+   										 <p class="plan-price">$750 <span class="plan-unit">&emsp;</span></p>
+   										 <ul class="plan-features">
+    						   <li class="plan-feature"><span class="plan-feature-name">Modem</span></li>
+     						  <li class="plan-feature"><span class="plan-feature-name">1m antenna</span></li>
+   							        </ul>
+   												 
+  									</div>
+  							  </td>
+ 							</tr>
+				 
+    			</table>
+    			<br>
+    			<p class=" to-animate"><strong>Note: </strong>Contention ratio of 30 and the cost does not involve installation.</p>
 
- <table border="5" width="100%" id="rgb"> 
-			<tr>
-				<td>tenho que colocar uma tabela linda aqui</td>
-				<td>1</td>
-				<td>1</td>
-				<td>1</td>
-				<td>1</td>
-				<td>1</td>
-				<td>1</td>
-				<td>1</td>
-			</tr>
-        </table>						 
-	</div>
-                    
-</section>
- 
- 		 						
-      							   
-                                                   
- 
-
-
-
-    
-
-   
-
-
-
-
-
-
- 
-	 
-
-	<section id="fh5co-faq" data-section="faq">
-		<div class="fh5co-faq">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-14 section-heading text-center">
-
-														 
-                                               
-
-
-
-
-
-						<h2 class="to-animate">Suporte Técnico Informático</h2>  
-						           
- 					 
-	<div class="slideshow slideshow1" style="box-shadow: 1px 2px 10px #FF0000;">  
-    	<ul>
-    		<li><img src="images/h1.jpg" alt="jQuery" width="650" height="400" /></li>
-    		<li><img src="images/h2.jpg" alt="Infinite Slideshow" width="650" height="400" /></li>
-    		<li><img src="images/h3.jpg" alt="only 4 lines of code" width="650" height="400" /></li>
-    		<li><img src="images/h4.jpg" alt="www.creativejuiz.fr" width="650" height="400" /></li>
-    	</ul>  
+          					 
 	</div>
 
-	 
-	 
-					<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">
-									Problemas com o computador? <br>   
-									Não consegue instalar a impressora? <br>
-									Não desespere! Os nossos técnicos vão até si e ajudam-no a ultrapassar qualquer dificuldade.
-								</h3>
- 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="box-faq to-animate-2">
-							<h3>Rede de computadores & VoIP</h3>
-							<p>Configuração da rede de computadores, análise, implementação e manutenção utilizando os protocolos de comunição padrões ou especificos como  IRPS da CISCO, de acordo com a preferncia do cliente</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Hardware</h3>
-							<p>Manutenção preventiva e instalação e actualização de drivers e componentes de Hardware.</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Desempenho dos despositivos</h3>
-							<p>Optimização de desempenho do Computador, Tablet ou Telemóvel.</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Vírus</h3>
-							<p>Detecção e eliminação de Vírus.</p>
-						</div>
-					</div> 
-					<div class="col-md-6">
-						<div class="box-faq to-animate-2">
-							<h3></i>Backups</h3>
-							<p>Implementação e acompanhamento de procedimentos de backup e recuperação de dados.</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Internet e Email</h3>
-							<p>Configuração de acesso à Internet e Correio electrónico (Email).</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Sistemas Operativos</h3>
-							<p>Instalação e manutenção de sistemas operativos.</p>
-						</div>
-						<div class="box-faq to-animate-2">
-							<h3>Impressoras</h3>
-							<p>Instalação, manutenção e reparação de impressoras.</p>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="fh5co-services" data-section="services">
+</p> </p> </p> </section> 
+
+
+<section id="fh5co-services" data-section="services">
 		<div class="fh5co-services">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">Serviços</h2>
+						<h2 class="to-animate">Principais Serviços</h2>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 subtext">
 								<h3 class="to-animate">A OLOGA Sistemas Informaticos Lda, tem como base os seguintes valores para prestação de serviços : Inovação, Profissionalismo, Dinamismo, Responsabilidade corporativa, Qualidade, Confiança</h3>
@@ -470,69 +370,534 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="box-services">
-							<i class="icon-laptop to-animate-2"></i>
-							<div class="fh5co-post to-animate">
-								<h3>Desenvolvimento de Softwares</h3>
-								<h5><li>Registo Médico Electrónico (Hospital Central de Maputo)</li></h5>
-								<h5><li>Matriz de Apoio a Criança Electrónico (UNICEF)</li></h5>
-							</div>
-						</div>
-						<div class="box-services">
-							<i class="icon-signal to-animate-2"></i>
-							<div class="fh5co-post to-animate">
-								<h3>Fornecimento de Internet via Satélite</h3>
-								<h5><li>Ministério da Ciência e Tecnologia – 5 Centros Multimédia Comunitários e ao Centro de Pesquisa Agrária</li></h5>
-								<h5><li>Presidência da República de Moçambique</li></h5>
-								<h5><li>Mineradoras, Empresas Privadas, Indivíduos</li></h5>
-								<h5><li>Gabinete do Primeiro Ministro – Sistema de redundância (Backup)</li></h5>
-								<h5><li>Grupo PEP em Moçambique – todas as lojas a nível nacional</li></h5>							
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-4">
-						<div class="box-services">
-							<i class="icon-screen-desktop to-animate-2"></i>
-							<div class="fh5co-post to-animate">
-								<h3>Criação e Gestão de WebSites</h3>
-								<h5><li>Domus Sociedade de Gestão Imobiliária.</li></h5>
-								<h5><li>Epsilon Investimentos</li></h5>
-								<h5><li>Icon Corretores</li></h5>
-								<h5><li>Momentum Moçambique</li></h5>
-								<h5><li>Estradas do Zambeze</li></h5>
+			
+			
 
+
+ 
+ 
+
+  <div class="red">
+  		      <div class="servicesDiv to-animate-2">
+         <img src="images/icon1.png" width="10%" class="center">
+      	<p style="text-align: center;">Desenvolvimento de Software</p>
+      	<p  id="Pjustify" > 
+
+      		A OLOGA desenvolve sistemas de acordo com as cliente. Software feito sobre medida para sua empresa com o objetivo de atender necessidades específicas e agregar valor ao seu produto/serviço. Com o uso de tecnologia de ponta,  a OLOGA  garante a qualidade de seus sistemas. Atuamos com excelência no desenvolvimento de sistemas corporativos em ambientes como Microsoft utilizando tecnologias como .Net, C#, SQL Server e outros.
+ 
+		</p>
+
+      </div>
+      	<div class="servicesdividir to-animate-2"> &emsp; </div>
+      <div class="servicesDiv to-animate-2">
+      	
+      			<img src="images/icon2.png"  class="center2">
+      	<p style="text-align: center;">Internet via Satélite</p>
+      	<p id="Pjustify" > 
+
+      		Tecnologias de informação e comunicação para qualquer parte do mundo, Ideal para os locais mais afastados dos centros urbanos,o que facilita o trabalho das instituições nas zonas mais recondidas do País.<br>
+
+		
+		</p>
+
+      </div>
+      	<div class="servicesdividir"> &emsp; </div>
+      <div class="servicesDiv to-animate-2">
+      	
+      			<img src="images/icon3.png" width="10%" class="center">
+      	<p style="text-align: center;">Assistência Técnica Informática</p>
+      	<p id="Pjustify"> 
+
+      		Assistência  técnica informática presencial e  remota  para qualquer lugar do mundo utilizando os melhores software de supporte tecnico como o Teamview.<br>
+      		Assistencia tecnica ao domicílio  ou escritório. <br>
+      		Os consultores também darão treinamento para a utilização do sistema e farão um acompanhamento inicial da utilização do sistema e sanar possíveis dúvidas que o cliente pode ter.
+		</p>
+      </div>  	
+  </div>
+  <div class="blue">
+  	
+
+  	      <div class="servicesDiv to-animate-2">
+         <img src="images/icon5.png" width="10%" class="center">
+      	<p style="text-align: center;">Websites e Marketing nas redes sociais</p>
+      	<p id="Pjustify" > 
+
+      		Com talento, design e Tecnologia. Criamos  websites pensando em qual a melhor maneira para que seu consumidor adquira seus produtos e/ou serviços.<br>
+      		Atualmente, empresas de todos os portes estão investindo mais no relacionamento com seus clientes, sejam nas redes sociais (como Twitter e Facebook) ou em seu website.
+		</p>
+
+      </div>
+      	<div class="servicesdividir"> &emsp; </div>
+      <div class="servicesDiv to-animate-2">
+      	
+      			<img src="images/icon6.png" width="10%" class="center">
+      	<p style="text-align: center;">Sistemas de Segurança integrados</p>
+      	<p id="Pjustify" > 
+      			A OLOGA fornece serviço controlde de acesso, sistemas vídeovigilância (Analógico e Digital), Alarmes, gravadores digitais de imagem, Biometria e Software de Integração dos vários sistemas de segurança.
+
+   			<br>Soluções de vídeovigilância (CCTV) ou câmaras de segurança em empresas ou casas é uma mais valia para a redução de crimes e fornecem informação e documentação valiosa para os seus proprietários.
+      		 
+		</p>
+
+      </div>
+      	<div class="servicesdividir"> &emsp; </div>
+      <div class="servicesDiv to-animate-2">
+      	
+      			<img src="images/icon7.png" width="10%" class="center2">
+      	<p style="text-align: center;">Gestão de Projectos Informáticos</p>
+      	<p id="Pjustify "> 
+
+      		<ul class="size">
+      			<li>Registo Médico Electrónico </li>
+      			<li>Software de gestão de casos para Crianças Órfâs e Vulneáveis </li>
+      			<li>Sistemas Informáticos em Micro Bancos </li>
+      			<li>Redes estruturadas</li>
+      			<li>Redes sem fio (Wireless) – Hot Spots, WANs, Point to Point, Point to Multi Point.</li>
+      			<li>Sistemas de Voz (PBX, VoIP)</li>
+      			<li>Circuitos de energia limpa</li>
+      		</ul> 
+		</p>
+      </div>
+
+
+  </div>
+
+ 
+
+ 	</div>
+ </div>
+ 
+
+ 
+	</section>
+        <section id="fh5co-testimony" data-section="testimony">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 to-animate">
+					<div class="wrap-testimony">
+						<div class="owl-carousel-fullwidth">
+								
+
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="images/work.png" alt="user">
+									</figure>
+									<blockquote>
+										 <h3>Alguns dos nossos trabalhos</h3>
+										 <P id="font"><font size="3">
+										 	Nosso corpo técnico é formado por técnicos com varios anos de experiência e pronta para auxiliar no que for necessário, desde o desenvolvimento de soluções a instalação e ativação do sistema contratado. <br> 
+
+										 	Somos profissionais comprometidos com a performance de nossos clientes e com o bom desempenho das soluções implementadas.<br> 
+
+										 	O software SureTrack / eCSI (SureTrack) oferece a capacidade de criar um plano de intervenção individualizado para cada beneficiário e fornece dados agregados em todos os KPAs em uma exibição visual ou painel. Vários relatórios podem ser extraídos do sistema. Após o seu sucesso em 2017, o FHI360 implementou oficialmente o software no Programa COVida, atualmente trabalhando com 70 Organizações Baseadas na Comunidade em todo o Moçambique, apoiando mais de 300.000 crianças.
+
+										 	
+										 </font></P>
+									</blockquote>
+									<span>Veja mais na galeria clicando <a data-toggle="modal" data-target="#trabalho" ><font color="red">aqui</font></a></span> 
+								</div>
 							</div>
-						</div>
-						<div class="box-services">
-							<i class="icon-usd to-animate-2"></i>
-							<div class="fh5co-post to-animate">
-								<h3>Micro Bancos Rurais:</h3>
-								<h5><li>Caixa Financeira de Caia – CFC</li></h5>
-								<h5><li>MicroBanco de Yingwé- McB YIingwé</li></h5>
-								<h5><li>Caixa Poupança Postal de Moçambique: (Marrupa, Mandimba)</li></h5>
-								<h5><li>MicroBanco Mulher – McBM(Matola)</li></h5>							
+
+
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="images/aword.png" alt="user">
+									</figure>
+									<blockquote>
+											<h3>Alguns dos nossos prêmios</h3>
+
+											<p  id="font" ><font size="3">A Ologa tem trabalhado com a FHI360 Moçambique para desenvolver e melhorar a ferramenta de monitoramento de impacto SureTrack / eCSI (SureTrack). O software recebeu um prêmio no ITU World, Awards 2018.<br>   
+											 
+											A OLOGA recebeu em 2015 um contrato após um processo de concurso para desenvolver e implementar um Sistema de Registro Médico Eletrônico e Registro de Pacientes para o Hospital Central de Maputo, a maior instalação médica do país. O projeto está em andamento, com os pacientes sendo registrados diariamente, e espera-se que a implementação seja finalizada até o final de 2019.
+
+											</font></p>
+									</blockquote>
+									<span>Veja alguns dos prêmios clicando <a data-toggle="modal" data-target="#premios" ><font color="red">aqui</font></a></span> 
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="box-services">
-							<i class="icon-sitemap to-animate-2"></i>
-							<div class="fh5co-post to-animate">
-								<h3>Analise, re-estruturação e manutenção da rede de dados</h3>
-								<h5><li>Gapi Sociedade de Investimentos -delegações Provinciais</li></h5>
-								<h5><li>Forças Armadas de Moçambique (FADM) – Departamento de Recursos Humanos</li></h5>
-								<h5><li>Instituto Nacional dos Transportes Terrestre (INATER)</li></h5>
-								<h5><li>Correios de Moçambique – departamento financeiro</li></h5>
-								<h5><li>Momentum Moçambique – manutenção mensal da rede informática</li></h5>							
-							</div>
+							
+
+ 
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</div>
-	</section>	
+
+		<!-- Modal -->
+<div class="modal fade" id="premios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" align="center">Prêmios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+           <div class="modal-body">
+          
+
+          <div class="carouselContainer">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="10"></li> 
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" align="center">
+      
+      <div class="item active">
+        <img src="images/awards/a1.jpg" alt="image 1" width="50%">
+        <div class="carousel-caption">
+         Telecom World Awards em 2018 na categoria de solução mais escalável.
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/awards/a2.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+         ;12;
+        </div>
+      </div>
+ 
+
+       <div class="item">
+        <img src="images/awards/a3.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+            <div class="item">
+        <img src="images/awards/a5.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+       "ICT Enterpreneurs Challenge 2005"
+        </div>
+      </div>
+
+
+            <div class="item">
+        <img src="images/awards/a7.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+         Africa entrepreneirship aword 2015
+        </div>
+      </div>
+
+
+
+            <div class="item">
+        <img src="images/awards/a8.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+         Feira da Inovação
+        </div>
+      </div>
+
+
+
+
+            <div class="item">
+        <img src="images/awards/a9.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+         100 Melhores PME inovadoras 2012 
+        </div>
+      </div>
+
+
+
+
+
+            <div class="item">
+        <img src="images/awards/a10.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+            Melhores PME Moçambicanas 2013
+        </div>
+      </div>
+
+
+
+
+            <div class="item">
+        <img src="images/awards/a11.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          2010
+        </div>
+      </div>
+
+
+
+
+            <div class="item">
+        <img src="images/awards/a12.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+
+            <div class="item">
+        <img src="images/awards/a13.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          "ICT Enterpreneurs Challenge 2005"
+        </div>
+      </div>
+
+
+
+ 
+
+    
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ 
+
+
+
+          </div> 
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+		<!-- Modal -->
+<div class="modal fade" id="trabalho" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" align="center">Galeria</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+           <div class="modal-body">
+          
+
+          <div class="carouselContainer">
+  <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="6"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="7"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="8"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="9"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="10"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="11"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="12"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="13"></li>
+      <li data-target="#carousel-example-generic1" data-slide-to="14"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" align="center" >
+      
+      <div class="item active" >
+        <img src="images/Trabalhos/t6.jpg" alt="image 1" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item" >
+        <img src="images/Trabalhos/t5.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+         
+      	            <div class="item" >
+        <img src="images/Trabalhos/t15.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t1.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t2.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t3.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t4.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t7.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t8.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t9.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t10.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t11.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t12.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t13.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+
+            <div class="item" >
+        <img src="images/Trabalhos/t14.jpg" alt="image 2" width="50%">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+
+ 
+ 
+   
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ 
+
+
+
+          </div> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+	</section>
+	
+		
 
 	
 			
@@ -542,63 +907,119 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">Meet The Team</h2>
+						<h2 class="to-animate">Conheça a Equipe</h2>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. </h3>
+								<h3 class="to-animate">O nosso profissionalismo impacta diretamente na qualidade de seu produto ou serviço. Por isso escolhemos bem quem caminhar ao nosso lado, conheça os nossos <a data-toggle="modal" data-target="#Parceiros">Parceiros estratégicos </a> </h3>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+
+
+
+
+					<div class="col-md-3">
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="images/person4.jpg" alt="Roger Garfield"></div>
-							<h3>Roger Garfield</h3>
-							<span class="position">Co-Founder, Lead Developer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							<h3>Wilton Chimonzo</h3>
+							<span class="position">Eng Informático, Engenheiro de redes chefe</span>
+							<p>Administração de sistemas de informação e redes.</p>
 							<ul class="social-media">
-								<li><a href="https://www.facebook.com/ologa" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-							</ul>
+								<li><a href="https://www.facebook.com/wilton.chimonzo" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+			 
 						</div>
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="team-box text-center to-animate-2">
 							<div class="user"><img class="img-reponsive" src="images/person2.jpg" alt="Roger Garfield"></div>
-							<h3>Kevin Steve</h3>
-							<span class="position">Co-Founder, Product Designer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							<h3>Mulweli Rebelo</h3>
+							<span class="position">Fundador, Director Geral</span>
+							<p>Dirige, planeja, organiza e controla as atividades de diversas áreas da empresa.</p>
 							<ul class="social-media">
-								<li><a href="https://www.facebook.com/ologa" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
+								<li><a href="https://www.facebook.com/mulweli.rebelo" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+			 
 							</ul>
 						</div>
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-3" style="height: 10%">
 						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="images/person3.jpg" alt="Roger Garfield"></div>
-							<h3>Ross Standford</h3>
-							<span class="position">Full Stack Developer</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							<div class="user"><img class="img-reponsive" src="images/person5.jpg" alt="Roger Garfield"></div>
+							<h3>Percilia Muianga</h3>
+							<span class="position">Administrativa e Financeira</span>
+							<p>Realiza o planejamento, auditoria, contabilidade e controle das finanças.</p>
 							<ul class="social-media">
-								<li><a href="https://www.facebook.com/ologa" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
-								<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-								<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-								<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
+								<li><a  class="facebook"><i class="icon-facebook"></i></a></li> 
+						 
 							</ul>
 						</div>
 					</div>
+
+										<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/person3.jpg" alt="Roger Garfield"></div>
+							<h3>Eudson Bambo</h3>
+							<span class="position">Full Stack Developer- desenvolvedor chefe </span>
+							<p>Realiza Coach e consultoria.<br> <br></p>
+							<ul class="social-media">
+								<li><a href="https://www.facebook.com/eudson.bambo" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+				 
+							</ul>
+						</div>
+					</div>
+
 				</div>
+
+				 
+																	<!-- Button trigger modal -->
+ 
+			
+<!-- Modal -->
+<div class="modal fade" id="Parceiros" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" align="center">Parceiros Estratégicos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table   width="90%" align="center">
+          	<tr>
+          		<td><img src="images/p1.jpg" width="100%"></td>
+          		<td><img src="images/p2.jpg" width="100%"></td>
+          		<td><img src="images/p3.jpg" width="100%"></td> 
+          	</tr>
+
+          	<tr>
+          		<td><img src="images/p4.jpg" width="100%"></td>
+          		<td><img src="images/p5.jpg" width="100%"></td>
+          		<td><img src="images/p6.jpg" width="100%"></td> 
+          	</tr>
+
+          	<tr>
+          		<td><img src="images/p7.jpg" width="100%"></td>
+          		<td><img src="images/p8.jpg" width="100%"></td>
+          		<td><img src="images/p9.jpg" width="100%"></td> 
+          	</tr>
+
+          	          	<tr>
+          		<td><img src="images/p10.jpg" width="100%"></td>
+          		<td><img src="images/p11.jpg" width="100%"></td> 
+          	</tr>
+          </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 			</div>
 		</div>
 	</section>
@@ -612,64 +1033,76 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">Confiável Por</h2>
+						<h2 class="to-animate">Alguns dos nossos Clientes</h2>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 subtext">
 								<h3 class="to-animate">Somos confiáveis ​​por estás empresas populares</h3>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					 <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
-					 	<div class="partner-logo to-animate-2">
-					 		<img src="images/logo5.jpg" alt="Partners" class="img-responsive">
-					 	</div>
-					 </div>
-				    <div class="col-md-2 col-sm-3 col-xs-6">
-				    	<div class="partner-logo to-animate-2">
-				    		<img src="images/logo2.jpg" alt="Partners" class="img-responsive">
-						</div>
-				    </div>
-				    <div class="col-md-2 col-sm-3 col-xs-6">
-				    	<div class="partner-logo to-animate-2">
-				    		<img src="images/logo3.jpg" alt="Partners" class="img-responsive">
-				    	</div>
-				    </div>
-				    <div class="col-md-2 col-sm-3 col-xs-6">
-				    	<div class="partner-logo to-animate-2">
-				    		<img src="images/logo4.jpg" alt="Partners" class="img-responsive">
-				    	</div>
-				    </div>
-				    <div class="col-md-2 col-sm-12 col-xs-12">
-				    	<div class="partner-logo to-animate-2">
-				    		<img src="images/logo1.jpg" alt="Partners" class="img-responsive">
-				    	</div>
-				    </div>
-				</div>
-			</div>
-		</div>
+				</div> 
+			 </div>
+
+ <div id="carousel-container">
+    <div id="carousel-inner">
+        <ul id="carousel-ul">
+            <li><img src="images/logo1.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo2.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo3.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo4.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo5.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo6.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo7.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo8.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo9.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo10.jpg" alt="Partners" class="img-responsive"></li>
+
+            <li><img src="images/logo11.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo12.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo13.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo14.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo15.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo16.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo17.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo18.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo19.jpg" alt="Partners" class="img-responsive"></li>
+            <li><img src="images/logo20.jpg" alt="Partners" class="img-responsive"></li>     
+        </ul>
+    </div>
+</div>
+
+		<div class="container"  >
+			 <table   align="center">
+
+			 	<thead>
+			 		<tr>
+			 			<td colspan="2" align="center">Entidades Governamentais - Moçambique   </td>
+			 		</tr>
+			 		 <tr>
+			 			<td colspan="2" align="center">&emsp;</td>
+			 		</tr>
+			 	</thead>
+			 	<tr>
+			 		<td><img src="images/logo21.png" alt="Partners" class="img-responsive"  ></td>
+			 		<td> 
+			 				<ul class="size">
+			 					<li>Presidência da República</li>
+			 					<li>Ministério da Ciência e Tecnologia</li>
+			 					<li>Ministério da Defesa (FADM)</li>
+			 					<li>Ministério da Saúde (HCM)</li>
+			 					<li>Gabinete do Primeiro Ministro</li>
+			 				</ul>
+			 		</td>
+			 	</tr>
+			 </table>
+ 		</div>
+	 </div>
 	</section>
 
-	<div class="getting-started getting-started-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 to-animate">
-					<h3>Getting Started</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-				<div class="col-md-6 to-animate-2">
-					<div class="call-to-action text-right">
-						<a href="#" class="sign-up">Sign Up For Free</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	 
 <section  id="fh5co-footer" data-section="footer">
 	<div id="fh5co-footer" role="contentinfo">
-		<div class="container">
+		<div class="container" id="white">
 			<div class="row">
 				<div class="col-md-4 to-animate">
 					<h3 class="section-title">Sobre</h3>
@@ -693,9 +1126,7 @@
 					<h3 class="section-title">Conecte-se conosco</h3>
 					<ul class="social-media">
 						<li><a href="https://www.facebook.com/ologa" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
-						<li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-						<li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-						<li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
+ 
 					</ul>
 				</div>
 				<div class="col-md-4 to-animate">
