@@ -1705,15 +1705,15 @@ font-size:12pt;
 }
 
 .photobanner {
-  animation: bannermove 50s linear infinite alternate-reverse;
+  animation: bannermove 5s linear infinite alternate-reverse;
 }
 
 @keyframes bannermove {
   from {
-    left: 0px;
+    left: +100px;
   }
   to {
-    left: -2700px;
+    left: -330px;
   }
 }
 
