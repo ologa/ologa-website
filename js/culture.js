@@ -41,6 +41,25 @@ var GetSystem_portifolio_work_text = document.querySelector(".portifolio_work_te
 
 var GestSystem_gallery = document.querySelector("#gallery")
 
+var GetSystem_team = document.querySelector("#team");
+var GetSystem_team_text = document.querySelector("#team_text");
+var GetSystem_team_founder = document.querySelector("#team_founder");
+var GetSystem_team_founder_text = document.querySelector("#team_founder_text");
+var GetSystem_team_financial = document.querySelector("#team_financial");
+var GetSystem_team_financial_text = document.querySelector("#team_financial_text");
+var GetSystem_team_director = document.querySelector("#team_director");
+var GetSystem_team_director_text = document.querySelector("#team_director_text");
+var GetSystem_team_dev = document.querySelector("#team_dev");
+var GetSystem_team_dev_text = document.querySelector("#team_dev_text");
+
+var GetSystem_clients = document.querySelector("#clients");
+var GetSystem_clients_text = document.querySelector("#clients_text");
+
+var GetSystem_about = document.querySelector("#about");
+var GetSystem_about_text1 = document.querySelector("#about_text1");
+var GetSystem_about_text2= document.querySelector("#about_text2");
+
+
 
 //language translation
 var language = {
@@ -149,6 +168,27 @@ if(window.location.hash) {
         GetSystem_portifolio_work_text.textContent = language.eng.port_work_text;
 
         GestSystem_gallery.textContent = language.eng.gall;
+
+        GetSystem_team.textContent = language.eng.team;
+        GetSystem_team_text.textContent = language.eng.team_text;
+        GetSystem_team_founder.textContent = language.eng.team_foun;
+        GetSystem_team_founder_text.textContent = language.eng.team_foun_text;
+        GetSystem_team_financial.textContent = language.eng.team_final;
+        GetSystem_team_financial_text.textContent = language.eng.team_final_text;
+        GetSystem_team_director.textContent = language.eng.team_direct;
+        GetSystem_team_director_text.textContent = language.eng.team_direct_text
+        GetSystem_team_dev.textContent = language.eng.team_d;
+        GetSystem_team_dev_text.textContent = language.eng.team_d_text;
+
+        
+        GetSystem_clients.textContent = language.eng.clint;
+        GetSystem_clients_text.textContent = language.eng.clint_text;
+
+        GetSystem_about.textContent = language.eng.abou;
+        GetSystem_about_text1.textContent = language.eng.abou_text1;
+        GetSystem_about_text2.textContent = language.eng.abou_text2;
+   
+
     }
 
 }
