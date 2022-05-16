@@ -16,11 +16,30 @@ var GetSystems_web_text2 = document.querySelector(".systemswebsites_web_text2");
 var GetSystems_sat_inter = document.querySelector("#internet_satelite");
 var GetSystems_sat_inter_text = document.querySelector(".internet_satelite_text");
 
-var GetSystem_solution = document.querySelector("#internet_satelite_solut");
+var GetSystem_solution = document.querySelector(".internet_satelite_solut");
 var GetSystem_satelite_price = document.querySelector("#internet_satelite_price");
+var GetSystem_price_eq = document.querySelector("#internet_satelite_price_enq");
 
 var GetSystem_main_service = document.querySelector("#main_service");
+var GetSystem_main_service_text = document.querySelector("#main_service_text");
+var GetSystem_main_service_softDev = document.querySelector("#main_service_SofDev");
+var GetSystem_main_service_softDev_text = document.querySelector(".main_service_SofDev_text");
+var GetSystem_main_service_inter = document.querySelector("#main_service_inter");
+var GetSystem_main_service_inter_text = document.querySelector(".main_service_inter_text");
+var GetSystem_main_service_it = document.querySelector("#main_service_it");
+var GetSystem_main_service_it_text = document.querySelector(".main_service_it_text");
+var GetSystem_main_service_web = document.querySelector("#main_service_web");
+var GetSystem_main_service_web_text = document.querySelector(".main_service_web_text");
+var GetSystem_main_service_integrated = document.querySelector("#main_service_integrated");
+var GetSystem_main_service_integrated_text = document.querySelector(".main_service_integrated_text");
+var GetSystem_main_service_proj= document.querySelector("#main_service_proj");
+ 
+var GetSystem_portifolio_awoards = document.querySelector("#portifolio_awoards");
+var GetSystem_portifolio_awoards_text = document.querySelector(".portifolio_awoards_text");
+var GetSystem_portifolio_work = document.querySelector("#portifolio_work");
+var GetSystem_portifolio_work_text = document.querySelector(".portifolio_work_text");
 
+var GestSystem_gallery = document.querySelector("#gallery")
 
 
 //language translation
@@ -41,7 +60,45 @@ var language = {
         Stellite_price: "Satellite Internet pricing",
         Stellite_p_eq: "Equipment cost: MDM 2210 Modem + 1m antenna at $750. Note Containment fee of 30 and cost does not involve installation.",
         main_serv:  "Main Services",
+        main_serv_text: "OLOGA Sistemas Informaticos Lda is based on the following values for the provision of services: Innovation, Professionalism, Dynamism, Corporate Responsibility, Quality, Trust",
+        main_serv_sofDev:"Software development",
+        main_serv_sofDev_text: "OLOGA develops systems according to customers. Tailor-made software for your company in order to meet specific needs and add value to your product/service. Using state-of-the-art technology, OLOGA guarantees the quality of its systems. We work with excellence in the development of corporate systems in environments such as Microsoft using technologies such as .Net, C#, SQL Server and others.",
+        main_serv_satInt: "Satellite internet",
+        main_serv_satText: "Information and communication technologies for any part of the world, Ideal for places further away from urban centers, which facilitates the work of institutions in the most remote areas of the country.",
+        main_serv_it: "IT Technical Assistance",
+        main_serv_it_text: "On-site and remote computer technical assistance to anywhere in the world using the best technical support software such as Teamview. Technical assistance at home or office. The consultants will also provide training in the use of the system and will make an initial follow-up of the use of the system and solve possible doubts that the customer may have.",
         
+        main_serv_web: "Websites and Social Media Marketing",
+        main_serv_wen_text: "With talent, design and technology. We create websites thinking about the best way for your consumer to acquire your products and/or services. Currently, companies of all sizes are investing more in the relationship with their customers, whether on social networks (such as Twitter and Facebook) or on their website.",
+        main_serv_int_sys: "Integrated Security Systems",
+        main_serv_int_sys_text: "OLOGA provides access control service, video surveillance systems (Analog and Digital), Alarms, digital image recorders, Biometrics and Integration Software for the various security systems. Video surveillance solutions (CCTV) or security cameras in businesses or homes are an asset to crime reduction and provide valuable information and documentation for their owners.",
+        main_serv_proj: "It Project Management",
+
+        port_awords: "Examples of our awards",
+        port_awords_text: "Ologa has been working with FHI360 Mozambique to develop and improve the SureTrack / eCSI (SureTrack) impact monitoring tool. The software received an award at the ITU World Awards 2018.OLOGA was awarded a contract in 2015 after a tender process to develop and implement an Electronic Medical Record and Patient Registration System for Maputo Central Hospital, the largest medical facility in the country. The project is ongoing, with patients being registered daily, and implementation is expected to be finalized by the end of 2019.",
+        port_work: "Examples of our work",
+        port_work_text: "Our technical staff is formed by technicians with several years of experience and ready to assist in whatever is necessary, from the development of solutions to the installation and activation of the contracted system.We are professionals committed to the performance of our customers and the good performance of the implemented solutions. SureTrack/eCSI (SureTrack) software offers the ability to create an individualized intervention plan for each beneficiary and provides aggregated data across all KPAs in a visual display or dashboard. Various reports can be extracted from the system. Following its success in 2017, FHI360 has officially implemented the software in the COVida Program, currently working with 70 Community Based Organizations across Mozambique, supporting over 300,000 children.",
+
+        gall: "Gallery",
+
+        team: "Meet the Team",
+        team_text: "Our professionalism directly impacts the quality of your product or service. That's why we choose well who to walk alongside, meet our Strategic Partners.",
+        team_foun: "Founder, General Manager",
+        team_foun_text:"He directs, plans, organizes and controls the activities of various areas of the company.",
+        team_final: "Administrative and Financial Director",
+        team_final_text: "Performs planning, auditing, accounting and control of finances.",
+        team_direct: "Technical Director",
+        team_direct_text: "Administration of information systems and networks.",
+        team_d: "Full Stack Developer- Head Developer",
+        team_d_text: "Performs Coach and consulting.",
+    
+        clint: "Examples of our Customers",
+        clint_text: "We are trusted by these popular companies",
+
+        abou: "About",
+        abou_text1: "For its capacity for innovation in the services it provides, OLOGA won the 100 Best SME in Mozambique, innovation category, in its 1st Edition on December 18, 2012.",
+        abou_text2: "Ologa's majority partner is Gapi, Sociedade de Investimentos SA, a Public Private Partnership that focuses its main focus on rural development through the growth of emreendedorism and the expansion of the financial system to remote regions. Gapi SI has as one of its strategies the implementation of micro banks and Ologa was created with the objective of designing technological solutions to facilitate the management of this network of micro banks.",
+     
          
     }
 }
@@ -71,8 +128,27 @@ if(window.location.hash) {
         GetSystem_solution.textContent = language.eng.Stellite_solut;
         GetSystem_satelite_price.textContent = language.eng.Stellite_price;
         GetSystem_price_eq.textContent = language.eng.Stellite_p_eq;
-        GetSystem_main_service.textContent = language.eng.main_service;
+
+        GetSystem_main_service.textContent = language.eng.main_serv;
+        GetSystem_main_service_text.textContent = language.eng.main_serv_text;
+        GetSystem_main_service_softDev.textContent = language.eng.main_serv_sofDev;
+        GetSystem_main_service_softDev_text.textContent = language.eng.main_serv_sofDev_text;
+        GetSystem_main_service_inter.textContent = language.eng.main_serv_satInt;
+        GetSystem_main_service_inter_text.textContent = language.eng.main_serv_satText;
+        GetSystem_main_service_it.textContent = language.eng.main_serv_it;
+        GetSystem_main_service_it_text.textContent = language.eng.main_serv_it_text;
+        GetSystem_main_service_web.textContent = language.eng.main_serv_web;
+        GetSystem_main_service_web_text.textContent = language.eng.main_serv_wen_text;
+        GetSystem_main_service_integrated.textContent = language.eng.main_serv_int_sys;
+        GetSystem_main_service_integrated_text.textContent = language.eng.main_serv_int_sys_text;
+        GetSystem_main_service_proj.textContent = language.eng.main_serv_proj;
        
+        GetSystem_portifolio_awoards.textContent = language.eng.port_awords;
+        GetSystem_portifolio_awoards_text.textContent = language.eng.port_awords_text;
+        GetSystem_portifolio_work.textContent = language.eng.port_work;
+        GetSystem_portifolio_work_text.textContent = language.eng.port_work_text;
+
+        GestSystem_gallery.textContent = language.eng.gall;
     }
 
 }
