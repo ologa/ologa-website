@@ -1,3 +1,9 @@
+function  GotoUrlCulture(url)
+{  
+    window.location = 'index.html' + url ;
+	location.reload();
+}
+
 ;(function () {
 	
 	'use strict';
