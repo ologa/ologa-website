@@ -1,5 +1,13 @@
 //define language reload achors
 var dataReload = document.querySelectorAll("[data-reload]");
+var GetHomeNav = document.querySelector("#home_nav");
+var GetSystemNav = document.querySelector("#system_nav");
+var GetInternetNav = document.querySelector("#internet_nav");
+var GetServiceNav = document.querySelector("#services_nav");
+var GetPortifolioNav = document.querySelector("#portifolio_nav");
+var GetTeamNav = document.querySelector("#team_nav");
+var GetContactNav = document.querySelector("#contact_nav");
+
 var GetHome = document.querySelector("#home");
 var GetSystems_h2 = document.querySelector("#systemswebsites_h2");
 var GetSystems_h3 = document.querySelector("#systemswebsites_h3");
@@ -86,7 +94,13 @@ var GetSystem_message= document.querySelector("#message");
 //language translation
 var language = {
     eng: {
-        
+        hom_nav: "Home",
+        syst_vav: "Systems and Websites",
+        inter_nav: "Satellite Internet",
+        servi_nav: "Services",
+        port_nav: "Portifolio",
+        tem_nav: "Time",
+        cont_nav: "Contact",
         hom: " Ologa Sistemas Informáticos Lda is a company that operates in the field of Information and Communication Technologies, focusing on technological solutions for social and economic development in Mozambique and abroad. The word Ologa is derived from the term “to speak” in Chuabo, a language spoken in Central Mozambique. The name arose from the idea of ​​establishing a link between the term “communication” and a national dialect.",
         systems_h2: "Systems and Websites",
         systems_h3: "OLOGA Sistemas Informáticos Lda, has a diversity of products in the areas of computer systems, check below:",
@@ -171,6 +185,14 @@ var language = {
 if(window.location.hash) {
 
     if(window.location.hash === "#eng") {
+
+        GetHomeNav.textContent = language.eng.hom_nav;
+        GetSystemNav.textContent = language.eng.syst_vav;
+        GetInternetNav.textContent = language.eng.inter_nav;
+        GetServiceNav.textContent = language.eng.servi_nav;
+        GetPortifolioNav.textContent = language.eng.port_nav;
+        GetTeamNav.textContent = language.eng.tem_nav;
+        GetContactNav.textContent = language.eng.cont_nav;
 
         GetHome.textContent = language.eng.hom;
         GetSystems_h2.textContent = language.eng.systems_h2;

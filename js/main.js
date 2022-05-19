@@ -1,7 +1,17 @@
 function  GotoUrlCulture(url)
 {  
-    window.location = 'index.html' + url ;
-	location.reload();
+ 
+	const _url = new URL(window.location);
+	_url.hash = '';
+	history.replaceState(null, document.title, _url);
+
+	url == "#eng" ?  
+	window.location = window.location +'#eng'
+   :window.location = window.location +'#pt'
+ 
+
+   location.reload(); 
+ 
 }
 
 ;(function () {
